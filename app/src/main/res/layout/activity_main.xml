@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+    android:id="@+id/tabhost"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tabStripEnabled="false" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton1"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="171dp"
+                        android:layout_marginLeft="171dp"
+                        android:layout_marginTop="56dp"
+                        android:onClick="onToggleE6Click"
+                        android:text="ToggleButton"
+                        android:textOff="E"
+                        android:textOn="E" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton1"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleAClick"
+                        android:text="ToggleButton"
+                        android:textOff="A"
+                        android:textOn="A" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton3"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton2"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleDClick"
+                        android:text="ToggleButton"
+                        android:textOff="D"
+                        android:textOn="D" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton4"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton3"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleGClick"
+                        android:text="ToggleButton"
+                        android:textOff="G"
+                        android:textOn="G" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton5"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton4"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleBClick"
+                        android:text="ToggleButton"
+                        android:textOff="B"
+                        android:textOn="B" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton6"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton5"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleE1Click"
+                        android:text="ToggleButton"
+                        android:textOff="E"
+                        android:textOn="E" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="167dp"
+                        android:layout_marginRight="167dp"
+                        android:layout_marginBottom="44dp"
+                        android:background="#FF5722"
+                        android:onClick="onButtonLoopClick"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_loop"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton7"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="171dp"
+                        android:layout_marginLeft="171dp"
+                        android:layout_marginTop="56dp"
+                        android:onClick="onToggleE6Click"
+                        android:text="ToggleButton"
+                        android:textOff="E"
+                        android:textOn="E" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton8"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton7"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleAClick"
+                        android:text="ToggleButton"
+                        android:textOff="A"
+                        android:textOn="A" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton9"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton8"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleDClick"
+                        android:text="ToggleButton"
+                        android:textOff="D"
+                        android:textOn="D" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton10"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton9"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleGClick"
+                        android:text="ToggleButton"
+                        android:textOff="G"
+                        android:textOn="G" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton11"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton10"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleBClick"
+                        android:text="ToggleButton"
+                        android:textOff="B"
+                        android:textOn="B" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton12"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/toggleButton11"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onToggleE1Click"
+                        android:text="ToggleButton"
+                        android:textOff="E"
+                        android:textOn="E" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="167dp"
+                        android:layout_marginRight="167dp"
+                        android:layout_marginBottom="44dp"
+                        android:background="#FF5722"
+                        android:onClick="onButtonLoopClick"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_loop"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
